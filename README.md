@@ -24,7 +24,7 @@ Will generate the following tweetable URL:
 http://tomhodgins.github.com/loadjs/#YWxlcnQoJ0hlbGxvIScp
 ```
 
-You can share this link on Twitter, and when users click it, they will be taken to [tomhodgins.github.io/loadjs/new](http://tomhodgins.github.io/loadjs/new) will load that JavaScript on [tomhodgins.github.io/loadjs](http://tomhodgins.github.io/loadjs) where they will be greeted by an alert that says 'Hello!'.
+You can share this link on Twitter, and when users click it, they will be taken to [tomhodgins.github.io/loadjs](http://tomhodgins.github.io/loadjs) where they will be greeted by an alert that says 'Hello!'.
 
 ## Why Did you Make This?
 
