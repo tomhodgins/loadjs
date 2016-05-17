@@ -1,0 +1,41 @@
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>stuffJS</title>
+<style>
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  textarea,
+  pre {
+    width: 100%;
+    height: 50vh;
+    padding: .5em;
+    font-size: 14pt;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Source Code Pro', Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  }
+</style>
+<body>
+  <textarea autofocus placeholder="Write your JS here"></textarea>
+  <pre>And copy it from here</pre>
+  <script>
+    var text = document.querySelector('textarea'),
+        pre = document.querySelector('pre')
+    document.addEventListener('keyup',function(e){
+      pre.innerHTML = 'http://tomhodgins.github.com/loadjs/#'+btoa(text.value)
+    })
+  </script>
+</body>
+</html>
