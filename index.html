@@ -6,7 +6,7 @@
   <title>loadJS</title>
   <script>
     if (location.hash){
-      var js = atob(location.search.hash('#')[1])
+      var js = atob(location.hash.split('#')[1])
       eval(js)
       console.log(js)
     }
