@@ -5,7 +5,7 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>loadJS</title>
   <script>
-    if (location.search){
+    if (location.hash){
       var js = atob(location.search.split('?')[1])
       eval(js)
       console.log(js)
